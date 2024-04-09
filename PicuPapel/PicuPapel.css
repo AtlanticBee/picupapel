@@ -1,0 +1,17 @@
+body{
+    background-color: #71adbb;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.container{
+    display: grid;
+    background-color: white;
+    padding: 10px;
+    height: 98vh;
+    grid-template-rows: 1fr 1fr 7fr 1fr;
+    grid-template-areas: 
+      "title"
+      "banner"
+      "main"
+      "footer";
+  }
