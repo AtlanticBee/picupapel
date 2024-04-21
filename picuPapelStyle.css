@@ -30,6 +30,7 @@ body{
     background-color: rgb(250, 241, 229);
     max-height: 70%;
     padding: 12px;
+    flex: 1;
     overflow:scroll;
     padding-top: 12px;
     padding-bottom: 12px;
