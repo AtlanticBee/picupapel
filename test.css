@@ -1,0 +1,80 @@
+html, body {
+    background-color: rgb(197, 222, 245);
+    font-family: Baskerville, serif;
+    font-size: 16px;
+}
+
+h2{
+    font-weight: 500;
+    font-size:x-large;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    min-height: fit-content;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: rgb(197, 222, 245);
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 80vh;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.footerHome{
+    position: fixed;
+    display: flex;
+    bottom: 12px;
+    left: calc(20% - 75px);
+    min-width: fit-content;
+    max-width: 150px;
+    height: 40px;
+    background-color: beige;
+    justify-content: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px grey;
+    margin-top: 3px;
+}
+
+.footerAbout{
+    position: fixed;
+    display: flex;
+    bottom: 12px;
+    left: calc(50% - 75px);
+    min-width: fit-content;
+    max-width: 150px;
+    height: 40px;
+    background-color: beige;
+    justify-content: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px grey;
+    margin-top: 3px;
+}
+
+.footerHelp{
+    position: fixed;
+    display: flex;
+    bottom: 12px;
+    left: calc(80% - 75px);
+    min-width: fit-content;
+    max-width: 150px;
+    height: 40px;
+    background-color: beige;
+    justify-content: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px grey;
+    margin-top: 3px;
+}
