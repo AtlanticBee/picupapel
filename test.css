@@ -78,3 +78,7 @@ h2{
     box-shadow: 3px 3px grey;
     margin-top: 3px;
 }
+
+@media screen and (max-width:580px) {
+    .desktopParagaph{display: none;}
+}
