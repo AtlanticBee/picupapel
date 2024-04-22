@@ -79,6 +79,6 @@ h2{
     margin-top: 3px;
 }
 
-@media screen and (max-width:580px) {
-    .desktopParagaph{display: none;}
+@media screen and (max-width:650px) {
+    .desktopParagaph { display: none; }
 }
