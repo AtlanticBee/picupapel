@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;    
+}
+
+head, body{
+    font-family: Garabond, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gridWrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: [header-row-start] 75px [header-row-end middle-row-start] auto [middle-row-end footer-row-start]  75px [footer-row-end];
+}
+
+.header{
+    grid-row: header-row-start / header-row-end;
+    background-color: rgb(196, 187, 249);
+}
+
+.main{
+    grid-row: middle-row-start / middle-row-end;
+    background-color: white;
+}
+
+.footer{
+    grid-row: footer-row-start / footer-row-end;
+    background-color: rgb(196, 187, 249);
+}
+
+.flexHeaderWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+    max-height: 49px;
+}
+
+.flexMainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    overflow: auto;
+    max-height: calc(100vh - 200px);
+}
+
+.flexFooterWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+    max-height: 49px;
+}
+
+.textNormal{
+    font-size: large;
+    text-align: center;
+}
+
+.textHeader{
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.textNote{
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+}
+
+.squareContainer{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 50);
+    margin: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.indexSquare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.squareText{
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 600px) {
+    .indexSquare{
+        width: 75px;
+        height: 75px;
+    }
+
+    .squareText{
+        font-size: small;
+    }
+  }
+
+#blue{
+    background-color: rgb(198, 198, 245);
+}
+
+#green{
+    background-color: rgb(199, 245, 198);
+}
+
+#yellow{
+    background-color: rgb(251, 251, 145);
+}
+
+#red{
+    background-color: rgb(250, 211, 199);
+}
+
+#purple{
+    background-color: rgb(250, 197, 250);
+}

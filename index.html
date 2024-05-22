@@ -1,56 +1,42 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <title>PicuPapel</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="/picuPapelStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picu Papel</title>
+    <link rel="stylesheet" href="stylesheetMain.css">
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <h3>Welcome to PicuPapel</h3>
-        </div>
-        <div id="main">
-            <img id="banner" src="/PicuPapelBanner.png" alt="PicuPapel Banner Image"/>
-            <div class="threeColumnDiv">
-                <div class="leftColumn">
-                    <div>
-                        <h2 class="topicHeader">Apps</h2>
-                        <ol>
-                            <li><a href="/pixelPicasso/pixelPicasso.html">Pixel Picasso</a>........... Draw your own pixel art!</li>
-                            <li><a href="test.html">testingPage</a></li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="middleColumn">
-                    <div>
-                        <h2 class="topicHeader">Blog</h2>
-                        <ol>
-                            <li><a href="burgages.html">Burgages</a>........... Thoughts on this medieval plot of land.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="rightColumn">
-                    <div>
-                        <h2 class="topicHeader">Other</h2>
-                        <ol>
-                            <li><a href="none.html">None</a>........... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius adipisci necessitatibus, reprehenderit in consectetur inventore sit quam ipsum aut. Cumque eos asperiores sit laboriosam quidem eum tempora esse unde?</li>
-                        </ol>
-                    </div>
-                </div>
+    <div class="gridWrapper">
+        <div class="header">
+            <div class="flexHeaderWrapper">
+                <h2>Welcome to Picu Papel</h2>
             </div>
         </div>
-        <div id="footer">
-            <div>
-                <a href="index.html">Home</a> &#127968
+        <div class="main">
+            <div class="flexMainWrapper">
+                <h2 class="textHeader" id="Welcome">Created as a blog and learning excercise in webpage creation.</h2>
+                <div class="squareContainer">
+                    <div class="indexSquare" id="blue"><p class="squareText"><a href="blogIndex.html">Blog</a></div>
+                    <div class="indexSquare" id="yellow"><p class="squareText"><a href="appsIndex.html">Apps</a></p></div>
+                    <div class="indexSquare" id="green"><p class="squareText"><a href="aboutIndex.html">About</a></p></div>
+                    <div class="indexSquare" id="red"><p class="squareText"><a href="contactIndex.html">Contact</a></p></div>
+                    <div class="indexSquare" id="purple"><p class="squareText"><a href="helpIndex.html">Help</a></p></div>
+                </div>
+                <h2 class="textHeader">Latest Updates</h2>
+                <h3>Blog</h3>
+                <p class="textNormal"><a href="burgages.html">Burgages</a> - a medieval plot of land found in European towns</p>
+                <h3>Apps</h3>
+                <p class="textNormal">None yet!</p>
+                <h3>Other Updates</h3>
+                <p class="textNormal">Design in current format established May 2024</p>
             </div>
-            <div>
-                <a href="help.html">Help</a> &#10067
-            </div>
-            <div>
-                <a href="about.html">About</a> &#8505
+        </div>
+        <div class="footer">
+            <div class="flexFooterWrapper">
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="aboutIndex.html">About</a></h3>
+                <h3><a href="contactIndex.html">Contact</a></h3>
+                <h3><a href="helpIndex.html">Help</a></h3>
             </div>
         </div>
     </div>
