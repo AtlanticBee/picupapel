@@ -8,10 +8,6 @@ head, body{
     padding: 0;
 }
 
-h3{
-    font-size: x-small;
-}
-
 .gridWrapper{
     display: grid;
     height: 100vh;
