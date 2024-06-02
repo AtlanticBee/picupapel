@@ -33,7 +33,7 @@ h3{
 }
 
 p, li, ol, ul{
-    width: 65rem;
+    max-width: 65rem;
     font-size: 2rem;
     font-weight: 400;
     text-overflow: ellipsis;
