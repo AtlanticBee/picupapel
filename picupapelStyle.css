@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    font-family: Garabond, serif;
+}
+
+html{
+    font-size: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 59px;
+    background-color: #cedafa;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    background-color: #e6ecfb;
+    font-size: 1.6rem;
+    font-weight:500;
+    padding: 3px;
+}
+
+.infratitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 1rem;
+    background-color: #f1f3f9;
+    padding: 3px;
+}
+
+.mainText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 1rem;
+    background-color: #ffffff;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.flexTextCentered{
+    width: 50rem;
+    text-align: center;
+}
+
+.flexTextLeft{
+    width: 50rem;
+    text-align: left;
+}
+
+.flexTextCenteredQuote{
+    width: 50rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flexTextLeftQuote{
+    width: 50rem;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dropDownMenu{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    left: 10px;
+    border: 1px solid black;
+    font-size: large;
+    box-shadow: 5px 5px rgb(193, 193, 193);
+    background-color: white;
+    line-height: 2;
+}
+
+#dropDownButton{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dropDownLink{
+    margin: 5px;
+}
+
+.dropDownLink:hover{
+    background-color: rgb(193, 193, 193);
+}
+
+.hexagonText{
+    pointer-events: none;
+}
+
+.hexagon{
+    fill: #fff700;
+    stroke-width: 2;
+    stroke:#ffd900;
+}
+
+.hexagon:hover{
+    fill: #ffdd00;
+}
