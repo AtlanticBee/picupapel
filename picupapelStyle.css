@@ -7,15 +7,6 @@ html{
     font-size: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    html{
-        font-size: 200%;
-    }
-    .textWrapper{
-        max-width: 30rem;
-    }
-}
-
 .title{
     display: flex;
     flex-direction: row;
