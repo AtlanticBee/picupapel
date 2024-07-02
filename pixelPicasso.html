@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <title>Picu Papel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="picupapelStyle.css">
+    <link rel="stylesheet" href="pixelPicassoStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="title">Picu Papel</div>
+    <div class="subtitle">Apps</div>
+    <div class="infratitle">Pixel Picasso</div>
+    <div class="mainText">
+        <h3 class="flexTextCentered">Welcome to Pixel Picasso!</h3>
+        <p class="flexTextCentered" style="font-style: italic;">Select a colour, then paint the pixels as you wish. Download option available.</p>
+    </div>
+    <div class="picassoButtonContainer">
+        <div class="buttonDiv">
+            <label for="colorPicker">Colour: </label>
+            <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+        </div>
+        <div class="buttonDiv">
+            <label for="showGridLines">Show Grid Lines? </label>
+            <input type="checkbox" id="showGridLines" name="showGridLines" checked>
+        </div>
+        <div class="buttonDiv">
+            <label for="downloadImage">Download Image (SVG): </label>
+            <input type="button" id="downloadImage" name="downloadImage" value="&#128190" style="font-size: larger;">
+        </div>
+        <div class="downloadLinkDiv">
+            Download Link: <a href="" download="myDrawring.svg" id="downloadLink">myDrawing.svg</a>
+        </div>
+    </div>
+    <div class="picassoEaselContainer">
+        <svg class="easelSVG" id="easelSVG" width="602" height="402">
+            <rect id="easelSquare" class="easelSquare" width="602" height="402" x="0" y="0" fill="#cedafa"></rect>
+
+            <!--Row 1-->
+
+            <rect id="square1" class="squareSVG" width="50" height="50" x="1" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square2" class="squareSVG" width="50" height="50" x="51" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square3" class="squareSVG" width="50" height="50" x="101" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square4" class="squareSVG" width="50" height="50" x="151" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square5" class="squareSVG" width="50" height="50" x="201" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square6" class="squareSVG" width="50" height="50" x="251" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square7" class="squareSVG" width="50" height="50" x="301" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square8" class="squareSVG" width="50" height="50" x="351" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square9" class="squareSVG" width="50" height="50" x="401" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square10" class="squareSVG" width="50" height="50" x="451" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square11" class="squareSVG" width="50" height="50" x="501" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square12" class="squareSVG" width="50" height="50" x="551" y="1" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 2-->
+
+            <rect id="square13" class="squareSVG" width="50" height="50" x="1" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square14" class="squareSVG" width="50" height="50" x="51" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square15" class="squareSVG" width="50" height="50" x="101" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square16" class="squareSVG" width="50" height="50" x="151" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square17" class="squareSVG" width="50" height="50" x="201" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square18" class="squareSVG" width="50" height="50" x="251" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square19" class="squareSVG" width="50" height="50" x="301" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square20" class="squareSVG" width="50" height="50" x="351" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square21" class="squareSVG" width="50" height="50" x="401" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square22" class="squareSVG" width="50" height="50" x="451" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square23" class="squareSVG" width="50" height="50" x="501" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square24" class="squareSVG" width="50" height="50" x="551" y="51" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square25" class="squareSVG" width="50" height="50" x="1" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square26" class="squareSVG" width="50" height="50" x="51" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square27" class="squareSVG" width="50" height="50" x="101" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square28" class="squareSVG" width="50" height="50" x="151" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square29" class="squareSVG" width="50" height="50" x="201" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square30" class="squareSVG" width="50" height="50" x="251" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square31" class="squareSVG" width="50" height="50" x="301" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square32" class="squareSVG" width="50" height="50" x="351" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square33" class="squareSVG" width="50" height="50" x="401" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square34" class="squareSVG" width="50" height="50" x="451" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square35" class="squareSVG" width="50" height="50" x="501" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square36" class="squareSVG" width="50" height="50" x="551" y="101" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square37" class="squareSVG" width="50" height="50" x="1" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square38" class="squareSVG" width="50" height="50" x="51" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square39" class="squareSVG" width="50" height="50" x="101" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square40" class="squareSVG" width="50" height="50" x="151" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square41" class="squareSVG" width="50" height="50" x="201" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square42" class="squareSVG" width="50" height="50" x="251" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square43" class="squareSVG" width="50" height="50" x="301" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square44" class="squareSVG" width="50" height="50" x="351" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square45" class="squareSVG" width="50" height="50" x="401" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square46" class="squareSVG" width="50" height="50" x="451" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square47" class="squareSVG" width="50" height="50" x="501" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square48" class="squareSVG" width="50" height="50" x="551" y="151" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square49" class="squareSVG" width="50" height="50" x="1" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square50" class="squareSVG" width="50" height="50" x="51" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square51" class="squareSVG" width="50" height="50" x="101" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square52" class="squareSVG" width="50" height="50" x="151" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square53" class="squareSVG" width="50" height="50" x="201" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square54" class="squareSVG" width="50" height="50" x="251" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square55" class="squareSVG" width="50" height="50" x="301" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square56" class="squareSVG" width="50" height="50" x="351" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square57" class="squareSVG" width="50" height="50" x="401" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square58" class="squareSVG" width="50" height="50" x="451" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square59" class="squareSVG" width="50" height="50" x="501" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square60" class="squareSVG" width="50" height="50" x="551" y="201" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square61" class="squareSVG" width="50" height="50" x="1" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square62" class="squareSVG" width="50" height="50" x="51" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square63" class="squareSVG" width="50" height="50" x="101" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square64" class="squareSVG" width="50" height="50" x="151" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square65" class="squareSVG" width="50" height="50" x="201" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square66" class="squareSVG" width="50" height="50" x="251" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square67" class="squareSVG" width="50" height="50" x="301" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square68" class="squareSVG" width="50" height="50" x="351" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square69" class="squareSVG" width="50" height="50" x="401" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square70" class="squareSVG" width="50" height="50" x="451" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square71" class="squareSVG" width="50" height="50" x="501" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square72" class="squareSVG" width="50" height="50" x="551" y="251" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square73" class="squareSVG" width="50" height="50" x="1" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square74" class="squareSVG" width="50" height="50" x="51" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square75" class="squareSVG" width="50" height="50" x="101" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square76" class="squareSVG" width="50" height="50" x="151" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square77" class="squareSVG" width="50" height="50" x="201" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square78" class="squareSVG" width="50" height="50" x="251" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square79" class="squareSVG" width="50" height="50" x="301" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square80" class="squareSVG" width="50" height="50" x="351" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square81" class="squareSVG" width="50" height="50" x="401" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square82" class="squareSVG" width="50" height="50" x="451" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square83" class="squareSVG" width="50" height="50" x="501" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square84" class="squareSVG" width="50" height="50" x="551" y="301" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+
+            <!--Row 3-->
+
+            <rect id="square85" class="squareSVG" width="50" height="50" x="1" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square86" class="squareSVG" width="50" height="50" x="51" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square87" class="squareSVG" width="50" height="50" x="101" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square88" class="squareSVG" width="50" height="50" x="151" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square89" class="squareSVG" width="50" height="50" x="201" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square90" class="squareSVG" width="50" height="50" x="251" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square91" class="squareSVG" width="50" height="50" x="301" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square92" class="squareSVG" width="50" height="50" x="351" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square93" class="squareSVG" width="50" height="50" x="401" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square94" class="squareSVG" width="50" height="50" x="451" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square95" class="squareSVG" width="50" height="50" x="501" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
+            <rect id="square96" class="squareSVG" width="50" height="50" x="551" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>          
+        </svg>
+    </div>
+    <svg id="dropDownButton" version="1.1" width="49px" height="49px">
+        <rect id="dropDownButtonLine1" x="7" y="7" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine2" x="7" y="21" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine3" x="7" y="35" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+    </svg>
+    <div id="dropDownMenu">
+        <div class="dropDownLink"><a href="index.html">Home</a></div>
+        <div class="dropDownLink"><a href="about.html">About</a></div>
+        <div class="dropDownLink"><a href="help.html">Help</a></div>
+        <div class="dropDownLink"><a href="contact.html">Contact</a></div>
+        <div class="dropDownLink"><a href="blog.html">Blog</a></div>
+        <div class="dropDownLink"><a href="apps.html">Apps</a></div>
+    </div>
+    <script src="picupapelScript.js"></script>
+    <script src="pixelPicassoScript.js"></script>
+</body>
