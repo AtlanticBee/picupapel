@@ -3,10 +3,22 @@
     flex-direction: row;
     justify-content:center;
     align-items:center;
-    max-width: 80vw;
+    max-width: 70vw;
     background-color:#f1f3f9;
     margin: auto;
     margin-bottom: 10px;
+    padding: 3px;
+}
+
+.picassoButtonContainerLower{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    max-width: 70vw;
+    background-color:#f1f3f9;
+    margin: auto;
+    margin-top: 10px;
     padding: 3px;
 }
 
@@ -16,19 +28,29 @@
     justify-content:center;
     align-items: center;
     margin: auto;
+    width: 60vw;
 }
+
 
 .easelSVG{
     display: flex;
+    width: 70vw;
+    height: auto;
+    display: block;
 }
 
 .buttonDiv{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
     justify-content:center;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+input{
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .downloadLinkDiv{
@@ -36,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 5;
-    margin-left: 5;
+    margin-right: 5px;
+    margin-left: 5px;
     visibility:hidden;
 }

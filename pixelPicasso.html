@@ -16,23 +16,16 @@
     </div>
     <div class="picassoButtonContainer">
         <div class="buttonDiv">
-            <label for="colorPicker">Colour: </label>
+            <label for="colorPicker">Colour:&nbsp;</label>
             <input type="color" id="colorPicker" name="colorPicker" value="#000000">
         </div>
         <div class="buttonDiv">
-            <label for="showGridLines">Show Grid Lines? </label>
+            <label for="showGridLines">Show Grid Lines?&nbsp;</label>
             <input type="checkbox" id="showGridLines" name="showGridLines" checked>
-        </div>
-        <div class="buttonDiv">
-            <label for="downloadImage">Download Image (SVG): </label>
-            <input type="button" id="downloadImage" name="downloadImage" value="&#128190" style="font-size: larger;">
-        </div>
-        <div class="downloadLinkDiv">
-            Download Link: <a href="" download="myDrawing.svg" id="downloadLink">myDrawing.svg</a>
         </div>
     </div>
     <div class="picassoEaselContainer">
-        <svg class="easelSVG" id="easelSVG">
+        <svg class="easelSVG" id="easelSVG" viewBox="0 0 602 402">
             <rect id="easelSquare" class="easelSquare" width="602" height="402" x="0" y="0" fill="#cedafa"></rect>
 
             <!--Row 1-->
@@ -155,6 +148,15 @@
             <rect id="square95" class="squareSVG" width="50" height="50" x="501" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>
             <rect id="square96" class="squareSVG" width="50" height="50" x="551" y="351" fill="#ffffff" stroke="#000000" stroke-width="1"></rect>          
         </svg>
+    </div>
+    <div class="picassoButtonContainerLower">
+        <div class="buttonDiv">
+            <label for="downloadImage">Download:&nbsp;</label>
+            <input type="button" id="downloadImage" name="downloadImage" value="&#128190" style="font-size:medium">
+        </div>
+        <div class="downloadLinkDiv">
+            Download Link:&nbsp;<a href="" download="myDrawing.svg" id="downloadLink">myDrawing.svg</a>
+        </div>
     </div>
     <svg id="dropDownButton" version="1.1" width="49px" height="49px">
         <rect id="dropDownButtonLine1" x="7" y="7" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
