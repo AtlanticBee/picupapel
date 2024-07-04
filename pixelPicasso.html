@@ -23,6 +23,9 @@
             <label for="showGridLines">Show Grid Lines?&nbsp;</label>
             <input type="checkbox" id="showGridLines" name="showGridLines" checked>
         </div>
+        <div class="buttonDiv">
+            <input type="button" id="clearEasel" name="clearEasel" value="Clear All" style="font-size: large;">
+        </div>
     </div>
     <div class="picassoEaselContainer">
         <svg class="easelSVG" id="easelSVG" viewBox="0 0 602 402">
@@ -155,7 +158,7 @@
             <input type="button" id="downloadImage" name="downloadImage" value="&#128190" style="font-size:medium">
         </div>
         <div class="downloadLinkDiv">
-            Download Link:&nbsp;<a href="" download="myDrawing.svg" id="downloadLink">myDrawing.svg</a>
+            Download Link:&nbsp;<a href="" download="myDrawing.png" id="downloadLink">myDrawing.png</a>
         </div>
     </div>
     <svg id="dropDownButton" version="1.1" width="49px" height="49px">
@@ -171,6 +174,7 @@
         <div class="dropDownLink"><a href="blog.html">Blog</a></div>
         <div class="dropDownLink"><a href="apps.html">Apps</a></div>
     </div>
+    <canvas id="hiddenCanvas" width="600" height="400"></canvas>
     <script src="picupapelScript.js"></script>
     <script src="pixelPicassoScript.js"></script>
 </body>
