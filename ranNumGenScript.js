@@ -13,11 +13,26 @@ document.getElementById("goButton").onclick=async() => {
     console.log("seconds = " + seconds);
 
     let artworkInteger = Math.abs(((Math.round((weatherJson.hourly.temperature_2m.reduce((a, b) => a + b, 0) / 72) * 100)/100).toFixed(0) * 10)) - seconds;
-    console.log(artworkInteger);
     let artworkAPIrequest = "https://api.artic.edu/api/v1/artworks/" + artworkInteger;
-    console.log(artworkAPIrequest);
     const artworkAPIresponse = await fetch(artworkAPIrequest);
     const artworkData = await artworkAPIresponse.json();
-    let artist = artworkData.data.artist_title;
-    document.getElementById("artwork").innerHTML = "Artist = " + artist;   
+
+    let artist;
+    if (artworkData.artist_title === String){
+        console.log(artworkData.data.artist_title);
+        artist = artworkData.data.artist_title;
+    }
+    else{
+        artist = "not found";
+    }
+    document.getElementById("artwork").innerHTML = "Artist = " + artist;
+    
+    let sumAscii;
+    for (let counter; counter < artist.length; counter++){
+        let charCode = artist.charCodeAt[counter];
+        sumAscii = sumAscii + charCode;
+    }
+
+    let randomNumber = Math.round(sumAscii + seconds + averageTemp + totalRain);
+    document.getElementById("result").innerHTML = randomNumber;
   };
