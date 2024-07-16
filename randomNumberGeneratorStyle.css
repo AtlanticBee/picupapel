@@ -1,0 +1,23 @@
+th{
+    background-color: #cedafa;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 10px;
+    max-width: 90%;
+}
+
+th, td{
+    padding: 3px;
+    border: 1px solid #808080;
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #e6ecfb;
+}
+
+#result{
+    min-width: 15%;
+}
