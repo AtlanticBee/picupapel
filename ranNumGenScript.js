@@ -29,7 +29,7 @@ document.getElementById("goButton").onclick=async() => {
 
     let randomMultiple = (blackpoolTotalRain + 1) * (blackpoolAverageTemperature + 1) * (balkhashAverageTemperature + 1) * (balkhashAverageWindspeed + 1) * (milliSeconds + 1);
     let sizeOfMultiple = Math.log10(randomMultiple);
-    let randomNumber = (randomMultiple / (10**(sizeOfMultiple + 1))).toFixed(8);
+    let randomNumber = (randomMultiple / (10**(sizeOfMultiple + 1)));
     console.log(randomNumber);
     document.getElementById("output").innerHTML = randomNumber;
 };
