@@ -31,7 +31,7 @@ document.getElementById("goButton").onclick=async() => {
     let sizeOfMultiple = Math.log10(randomMultiple);
     let randomNumber = (randomMultiple / (10**(sizeOfMultiple + 1))).toFixed(8);
     console.log(randomNumber);
-    document.getElementById("output").innerHTML(randomNumber);
+    document.getElementById("output").innerHTML = randomNumber;
 };
 
   
