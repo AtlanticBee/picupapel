@@ -29,20 +29,20 @@
                 <td><a href="//open-meteo.com">open-meteo.com</a></td>
                 <td><a href="https://api.open-meteo.com/v1/forecast?latitude=53.8167&longitude=-3.05&hourly=temperature_2m,rain&past_days=2&forecast_days=1">Link</a></td>
                 <td>Zippenfenig, P. (2023) Open-Meteo.com Weather API. Zenodo. doi: 10.5281/ZENODO.7970649.</td>
-                <td id="weather"></td>
+                <td id="blackpool"></td>
             </tr>
             <tr>
-                <td>Artwork from the Art Institute of Chicago</td>
-                <td><a href="https://api.artic.edu/docs/">api.artic.edu/docs/</a></td>
-                <td>"https://api.artic.edu/api/v1/artworks/" + integer (generated from blend of from seconds in UTC time and the total temperature previously)</td>
-                <td>None found</td>
-                <td id="artwork"></td>
+                <td>Windspeed and Temerature for Balkhash, Kazakhstan from 2 days prior to now</td>
+                <td><a href="//open-meteo.com">open-meteo.com</a></td>
+                <td><a href="https://api.open-meteo.com/v1/forecast?latitude=46.8481&longitude=74.995&hourly=temperature_2m,wind_speed_10m&past_days=2&forecast_days=1">Link</a></td>
+                <td>Zippenfenig, P. (2023) Open-Meteo.com Weather API. Zenodo. doi: 10.5281/ZENODO.7970649.</td>
+                <td id="balkhash"></td>
             </tr>
         </table>
         <input type="button" id="goButton" name="goButton" value="GO" style="font-size: larger; background-color: rgb(141, 211, 141);">
         <div>
             <h3 class="flexTextCentered">Results:</h3>
-            <p class="flexTextCentered" id="result">This app is currently broken (the artwork API seems unreliable.) BRB!</p>
+            <p class="flexTextCentered" id="result"></p>
         </div>
     </div>
     <svg id="dropDownButton" version="1.1" width="49px" height="49px">
