@@ -19,5 +19,5 @@ tbody > tr:nth-of-type(odd) {
 }
 
 #result{
-    min-width: 15%;
+    min-width: 200px;
 }
