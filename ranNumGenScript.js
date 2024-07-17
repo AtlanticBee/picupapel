@@ -13,7 +13,7 @@ document.getElementById("goButton").onclick=async() => {
     const balkhashJson = await balkhashAPIresponse.json();
     console.log(balkhashJson);
     let balkhashAverageTemperature = balkhashJson.hourly.temperature_2m.reduce((a, b) => a + b, 0);        //A new function I've learned. Reduce takes two functions: a is the accumulator, b is the default value to add if empty element.
-    let balkhashAverageWindspeed = (Math.round((balkhashJson.hourly.windSpeed10m.reduce((a, b) => a + b, 0) / 72) * 100)/100).toFixed(2);
+    let balkhashAverageWindspeed = (Math.round((balkhashJson.hourly.wind_speed_10m.reduce((a, b) => a + b, 0) / 72) * 100)/100).toFixed(2);
 
     let milliSeconds = new Date().getMilliseconds();
 
