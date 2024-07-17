@@ -27,9 +27,18 @@ document.getElementById("goButton").onclick=async() => {
         "\n" + "Balkhash Average Temperature (C) = " + balkhashAverageTemperature
     );
 
-    let randomMultiple = (blackpoolTotalRain + 1) * (blackpoolAverageTemperature + 1) * (balkhashAverageTemperature + 1) * (balkhashAverageWindspeed + 1) * (milliSeconds + 1);
-    let sizeOfMultiple = Math.log10(randomMultiple);
-    let randomNumber = (randomMultiple / (10**(sizeOfMultiple + 1)));
+    let randomMultiple = Math.round((blackpoolTotalRain + 1) * (blackpoolAverageTemperature + 1) * (balkhashAverageTemperature + 1) * (balkhashAverageWindspeed + 1) * (milliSeconds + 1));
+    let numberAsString = randomMultiple.toString();
+    if (numberAsString.length < 6){
+        let remainingLength = 6 - numberLength;
+        for (let counter; counter < remainingLength; counter++){
+            numberAsString = numberAsString + "0";
+        }
+    }
+    else if (numberAsString > 6){
+        numberAsString = numberAsString.substring(0,5);
+    }
+    let randomNumber = Number(numberAsString)/100000;
     console.log(randomNumber);
     document.getElementById("output").innerHTML = randomNumber;
 };
