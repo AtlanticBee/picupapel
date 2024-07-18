@@ -1,0 +1,50 @@
+#phytochemicalTable{
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 2px rgb(98, 98, 98);
+    text-align: center;
+}
+
+td, th, tr{
+    padding: 4px;
+}
+
+td{
+    border: 1px #b2b2b2 solid;
+}
+
+#tableMainHeader{
+    background-color: #cedafa;
+}
+
+.tableSubHeader{
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+#fruits{
+    background-color: #ffdab9;
+}
+
+#vegetables{
+    background-color: #baf4ba;
+}
+
+#nuts{
+    background-color: #efbe98;
+}
+
+#herbs{
+    background-color: #9bcb9b;
+}
+
+#spices{
+    background-color: #f9a7a7;
+}
+
+.structureThumbnail{
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    width: auto;
+}

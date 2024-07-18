@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Picu Papel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="picupapelStyle.css">
+    <link rel="stylesheet" href="phytochemicalStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="title">Picu Papel</div>
+    <div class="subtitle">Blog</div>
+    <div class="infratitle">Phytochemicals - Started July 2024</div>
+    <div class="mainText">
+        <h3 class="flexTextCentered">Phytochemical Database</h3>
+        <p class="flexTextCentered" style="font-style: italic;">This table is not an exhaustive list, nor for any medicinal/nutritional guidance.<br>The aim is to compile a list of some of the non-nutrient chemicals in our diet from plants (i.e. not the usual carbs, proteins, lipids etc.).<br>It is these chemicals that often impart flavour, colour and other interesting properties.</p>
+        <table id="phytochemicalTable">
+            <thead>
+                <tr id="tableMainHeader">
+                    <th id="EntryID">EntryID</th>
+                    <th id="VulgarName">Vulgar Name</th>
+                    <th id="CAS">CAS</th>
+                    <th id="ReferencePlant">Reference Plant</th>
+                    <th id="PlantLocation">Plant Location</th>
+                    <th id="ChemicalType">Chemical Type</th>
+                    <th id="Structure">Structure</th>
+                    <th id="CulinaryNotes">Culinary Notes</th>
+                    <th id="MedicinalNotes">Medicinal Notes</th>
+                    <th id="ADME">ADME Notes</th>
+                    <th id="OtherNotes">Other Notes</th>
+                    <th id="References">References</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tableSubHeader" id="fruits">
+                    <th colspan="12">Fruits</th>
+                </tr>
+                <tr class="tableEntry">
+                    <td class="tableDataID">1</td>
+                    <td class="tableDataVulgar">Bergamottin</td>
+                    <td class="tableDataCAS">7380-40-7</td>
+                    <td class="tableDataReferencePlant">Bergamot Orange</td>
+                    <td class="tableDataPlantLocation">Mediterranean</td>
+                    <td class="tableDataChemicalType">Furanocoumarin</td>
+                    <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
+                    <td class="tableDataCulinary">Essential oils containing bergamottin are used to flavour Earl Grey tea</td>
+                    <td class="tableDataMedicinal">Potentially phototoxic. The same family of chemicals in grapefruits (and other citrus to an extent) that inhibit CYP3A4 (see below).</td>
+                    <td class="tableDataADME">Inhibitor of P450 enzymes. Similar fruits like grapefruits recommended to avoid during use of drugs dependent on P450 metabolism.</td>
+                    <td class="tableDataOtherNotes">Used as a fragrance.</td>
+                    <td class="tableDataReferences"><a href="#ref1-1">Ref1-1</a></td>
+                </tr>
+                <tr class="tableSubHeader" id="vegetables">
+                    <th colspan="12">Vegetables</th>
+                </tr>
+                <tr class="tableSubHeader" id="nuts">
+                    <th colspan="12">Nuts</th>
+                </tr>
+                <tr class="tableSubHeader" id="herbs">
+                    <th colspan="12">Herbs</th>
+                </tr>
+                <tr class="tableSubHeader" id="spices">
+                    <th colspan="12">Spices</th>
+                </tr>
+                <tr class="tableEntry">
+                    <td class="tableDataID">EMPTY</td>
+                    <td class="tableDataVulgar">EMPTY</td>
+                    <td class="tableDataCAS">EMPTY</td>
+                    <td class="tableDataReferencePlant">EMPTY</td>
+                    <td class="tableDataPlantLocation">EMPTY</td>
+                    <td class="tableDataChemicalType">EMPTY</td>
+                    <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
+                    <td class="tableDataCulinary">EMPTY</td>
+                    <td class="tableDataMedicinal">EMPTY</td>
+                    <td class="tableDataADME">EMPTY</td>
+                    <td class="tableDataOtherNotes">EMPTY</td>
+                    <td class="tableDataReferences"><a href="#ref1-1">EMPTY</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        <h3 class="flexTextCentered">References</h3>
+        <ol>
+            <li id="ref1-1"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6321104/">Ref1-1</a> - Ko JH, Arfuso F, Sethi G, Ahn KS. Pharmacological Utilization of Bergamottin, Derived from Grapefruits, in Cancer Prevention and Therapy. Int J Mol Sci. 2018 Dec 14;19(12):4048. doi: 10.3390/ijms19124048. PMID: 30558157; PMCID: PMC6321104.</li>
+        </ol>
+        <p class="flexTextCentered">Notes and Credits: this is a hobby so I will not be devoutly referencing every fact (a lot come from wikipiedia/Google!)<br>Credit to PubChem for generating structures for free here: <a href="https://pubchem.ncbi.nlm.nih.gov//edit3/index.html">Pubchem Sketcher</a>.<br>Perhaps one day we will use such a list of chemicals to explore and understand the ADME-Tox landscape of humans without dangerous synthetics and even use them for diagnostics...<br>...that, and seasoning stews of course!</p>
+    </div>
+    <svg id="dropDownButton" version="1.1" width="49px" height="49px">
+        <rect id="dropDownButtonLine1" x="7" y="7" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine2" x="7" y="21" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine3" x="7" y="35" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+    </svg>
+    <div id="dropDownMenu">
+        <div class="dropDownLink"><a href="index.html">Home</a></div>
+        <div class="dropDownLink"><a href="about.html">About</a></div>
+        <div class="dropDownLink"><a href="help.html">Help</a></div>
+        <div class="dropDownLink"><a href="contact.html">Contact</a></div>
+        <div class="dropDownLink"><a href="blog.html">Blog</a></div>
+        <div class="dropDownLink"><a href="apps.html">Apps</a></div>
+    </div>
+    <script src="picupapelScript.js"></script>
+</body>
