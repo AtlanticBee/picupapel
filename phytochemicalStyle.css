@@ -7,7 +7,7 @@
 
 #phytochemicalTableDiv{
     overflow: auto;
-    display: block;
+    width: 95%;
 }
 
 td, th, tr{
