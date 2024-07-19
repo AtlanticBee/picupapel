@@ -22,9 +22,6 @@ td{
 
 #tableMainHeader{
     background-color: #cedafa;
-}
-
-thead{
     position: sticky;
     top: 0px;
 }
