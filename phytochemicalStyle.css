@@ -9,11 +9,15 @@
     overflow-x: auto;
     overflow-y:auto;
     width: 90vw;
-    height: 90vh;
+    max-height: 75vh;
 }
 
 td, th, tr{
     padding: 4px;
+}
+
+tr{
+    max-height: 250px;
 }
 
 td{
