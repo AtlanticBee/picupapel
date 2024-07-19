@@ -3,12 +3,7 @@
     width: 100%;
     border: solid 2px rgb(98, 98, 98);
     text-align: center;
-}
-
-#phytochemicalTableDiv{
     overflow-x: auto;
-    overflow-y: auto;
-    max-width: 95vh;
 }
 
 td, th, tr{
