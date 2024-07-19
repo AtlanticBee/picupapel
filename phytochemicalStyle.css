@@ -6,8 +6,9 @@
 }
 
 #phytochemicalTableDiv{
-    overflow: auto;
-    width: 95%;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: 95vh;
 }
 
 td, th, tr{
