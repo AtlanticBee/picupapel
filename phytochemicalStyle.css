@@ -3,8 +3,10 @@
     width: 100%;
     border: solid 2px rgb(98, 98, 98);
     text-align: center;
-    overflow: auto;
 }
+
+#phytochemicalTableDiv{
+    overflow: auto;
 
 td, th, tr{
     padding: 4px;
