@@ -3,6 +3,7 @@
     width: 100%;
     border: solid 2px rgb(98, 98, 98);
     text-align: center;
+    overflow: auto;
 }
 
 td, th, tr{
@@ -15,6 +16,11 @@ td{
 
 #tableMainHeader{
     background-color: #cedafa;
+}
+
+thead{
+    position: sticky;
+    top: 0px;
 }
 
 .tableSubHeader{
