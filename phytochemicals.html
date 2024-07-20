@@ -13,6 +13,7 @@
     <div class="mainText">
         <h3 class="flexTextCentered">Phytochemical Database</h3>
         <p class="flexTextCentered" style="font-style: italic;">This table is not an exhaustive list, nor for any medicinal/nutritional guidance.<br>The aim is to compile a list of some of the non-nutrient chemicals in our diet from plants (i.e. not the usual carbs, proteins, lipids etc.).<br>It is these chemicals that often impart flavour, colour and other interesting properties.</p>
+        <p>For some general notes on the topics see the <a href="#generalNotes">general notes</a> at the bottom of the page.</p>
         <table id="phytochemicalTable">
             <thead>
                 <tr id="tableMainHeader">
@@ -38,7 +39,7 @@
                     <td class="tableDataID">1</td>
                     <td class="tableDataVulgar">Bergamottin</td>
                     <td class="tableDataCAS">7380-40-7</td>
-                    <td class="tableDataReferencePlant">Bergamot Orange</td>
+                    <td class="tableDataReferencePlant">Bergamot Orange (tree)</td>
                     <td class="tableDataPlantLocation">Mediterranean</td>
                     <td class="tableDataChemicalType">Furanocoumarin</td>
                     <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
@@ -59,6 +60,25 @@
                 </tr>
                 <tr class="tableSubHeader" id="spices">
                     <th colspan="12">Spices</th>
+                    <tr class="tableEntry">
+                        <td class="tableDataID">2</td>
+                        <td class="tableDataVulgar">Piperine</td>
+                        <td class="tableDataCAS">94-62-2</td>
+                        <td class="tableDataReferencePlant">Pepper plant (woody vine)</td>
+                        <td class="tableDataPlantLocation">S/SE Asia</td>
+                        <td class="tableDataChemicalType">Alkaloid</td>
+                        <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/piperine.png" alt="piperine"></td>
+                        <td class="tableDataCulinary">Ancient spice praised for its heat, historically expensive and a central product in the spice trade from Asia and Europe. Black and white pepper are from the same plant, but black pepper is ground after boiling, drying and grinding the entire unripe 'drupe' (flesh and seed), while white pepper is the ground seed after extraction from the mature drupe.</td>
+                        <td class="tableDataMedicinal">Beyond traditional medicine, piperine appears to have no direct applications (though it is a key chemical building block and has various avenues of medical research).</td>
+                        <td class="tableDataADME">Piperine appears to have complex ADME, though its high hydrophobicity appears to allow for passove absorpion. Studies have shown it inhibits MAO-A and B (potential neurological effects) and P450 enzymes 3A and 2D6.</td>
+                        <td class="tableDataOtherNotes">The nitrogenous ring on its own is called piperidine. The carboxylic acid separated from piperidine is called piperic acid. Piperidine is a regulated chemical as it can be used as a building block for many pharmaceuticals and illicit drugs (e.g. "Angel Dust").</td>
+                        <td class="tableDataReferences">
+                            Medicinal review, 2022: <a href="#ref2-1">Ref2-1</a><br>
+                            ADME review of oral PK, 2021: <a href="#ref2-2">Ref2-2</a><br>
+                            MAO-A/B inhibition (reverisble), 2005: <a href="#ref2-3">Ref2-3</a><br>
+                            P450 inhibition (mechanism-based), 2020: <a href="#ref2-4">Ref2-4</a>
+                        </td>
+                    </tr>
                 </tr>
                 <tr class="tableEntry">
                     <td class="tableDataID">EMPTY</td>
@@ -78,9 +98,18 @@
             <tfoot>
             </tfoot>
         </table>
+        <h3 class="flexTextCentered">General Notes</h3>
+        <p class="flexTextLeft" id="generalNotes">
+            Alkaloids - general term for compounds with at least a nitrogen, often basic. Not a particularly robust classification by chemistry or biochemistry.
+        </p>
         <h3 class="flexTextCentered">References</h3>
         <ol>
             <li id="ref1-1"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6321104/">Ref1-1</a> - Ko JH, Arfuso F, Sethi G, Ahn KS. Pharmacological Utilization of Bergamottin, Derived from Grapefruits, in Cancer Prevention and Therapy. Int J Mol Sci. 2018 Dec 14;19(12):4048. doi: 10.3390/ijms19124048. PMID: 30558157; PMCID: PMC6321104.</li>
+            <li id="ref2-1"><a href="https://pubmed.ncbi.nlm.nih.gov/35196422/">Ref2-1</a> - Imran M, Samal M, Qadir A, Ali A, Mir SR. A critical review on the extraction and pharmacotherapeutic activity of piperine. Polim Med. 2022 Jan-Jun;52(1):31-36. doi: 10.17219/pim/145512. PMID: 35196422.</li>
+            <li id="ref2-2"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8467119/">Ref2-2</a> - Ziegenhagen R, Heimberg K, Lampen A, Hirsch-Ernst KI. Safety Aspects of the Use of Isolated Piperine Ingested as a Bolus. Foods. 2021 Sep 8;10(9):2121. doi: 10.3390/foods10092121. PMID: 34574230; PMCID: PMC8467119.</li>
+            <li id="ref2-3"><a href="https://pubmed.ncbi.nlm.nih.gov/15997146/">Ref2-3</a> - Lee SA, Hong SS, Han XH, Hwang JS, Oh GJ, Lee KS, Lee MK, Hwang BY, Ro JS. Piperine from the fruits of Piper longum with inhibitory effect on monoamine oxidase and antidepressant-like activity. Chem Pharm Bull (Tokyo). 2005 Jul;53(7):832-5. doi: 10.1248/cpb.53.832. PMID: 15997146.</li>
+            <li id="ref2-4"><a href="https://pubmed.ncbi.nlm.nih.gov/31748224/">Ref2-4</a> - Cui T, Wang Q, Tian X, Zhang K, Peng Y, Zheng J. Piperine Is a Mechanism-Based Inactivator of CYP3A. Drug Metab Dispos. 2020 Feb;48(2):123-134. doi: 10.1124/dmd.119.088955. Epub 2019 Nov 20. PMID: 31748224.</li>
+            <li id="EXAMPLE"><a href="EXAMPLE">RefEXAMPLE</a> - EXAMPLE</li>
         </ol>
         <p class="flexTextCentered">Notes and Credits: this is a hobby so I will not be devoutly referencing every fact (a lot come from wikipiedia/Google!)<br>Credit to PubChem for generating structures for free here: <a href="https://pubchem.ncbi.nlm.nih.gov//edit3/index.html">Pubchem Sketcher</a>.<br>Perhaps one day we will use such a list of chemicals to explore and understand the ADME-Tox landscape of humans without dangerous synthetics and even use them for diagnostics...<br>...that, and seasoning stews of course!</p>
     </div>
