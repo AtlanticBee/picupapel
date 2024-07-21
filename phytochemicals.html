@@ -14,90 +14,92 @@
         <h3 class="flexTextCentered">Phytochemical Database</h3>
         <p class="flexTextCentered" style="font-style: italic;">This table is not an exhaustive list, nor for any medicinal/nutritional guidance.<br>The aim is to compile a list of some of the non-nutrient chemicals in our diet from plants (i.e. not the usual carbs, proteins, lipids etc.).<br>It is these chemicals that often impart flavour, colour and other interesting properties.</p>
         <p>For some general notes on the topics see the <a href="#generalNotes">general notes</a> at the bottom of the page.</p>
-        <table id="phytochemicalTable">
-            <thead>
-                <tr id="tableMainHeader">
-                    <th id="EntryID">EntryID</th>
-                    <th id="VulgarName">Vulgar Name</th>
-                    <th id="CAS">CAS</th>
-                    <th id="ReferencePlant">Reference Plant</th>
-                    <th id="PlantLocation">Plant Location</th>
-                    <th id="ChemicalType">Chemical Type</th>
-                    <th id="Structure">Structure</th>
-                    <th id="CulinaryNotes">Culinary Notes</th>
-                    <th id="MedicinalNotes">Medicinal Notes</th>
-                    <th id="ADME">ADME Notes</th>
-                    <th id="OtherNotes">Other Notes</th>
-                    <th id="References">References</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="tableSubHeader" id="fruits">
-                    <th colspan="12">Fruits</th>
-                </tr>
-                <tr class="tableEntry">
-                    <td class="tableDataID">1</td>
-                    <td class="tableDataVulgar">Bergamottin</td>
-                    <td class="tableDataCAS">7380-40-7</td>
-                    <td class="tableDataReferencePlant">Bergamot Orange (tree)</td>
-                    <td class="tableDataPlantLocation">Mediterranean</td>
-                    <td class="tableDataChemicalType">Furanocoumarin</td>
-                    <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
-                    <td class="tableDataCulinary">Essential oils containing bergamottin are used to flavour Earl Grey tea</td>
-                    <td class="tableDataMedicinal">Potentially phototoxic. The same family of chemicals in grapefruits (and other citrus to an extent) that inhibit CYP3A4 (see below).</td>
-                    <td class="tableDataADME">Inhibitor of P450 enzymes. Similar fruits like grapefruits recommended to avoid during use of drugs dependent on P450 metabolism.</td>
-                    <td class="tableDataOtherNotes">Used as a fragrance.</td>
-                    <td class="tableDataReferences"><a href="#ref1-1">Ref1-1</a></td>
-                </tr>
-                <tr class="tableSubHeader" id="vegetables">
-                    <th colspan="12">Vegetables</th>
-                </tr>
-                <tr class="tableSubHeader" id="nuts">
-                    <th colspan="12">Nuts</th>
-                </tr>
-                <tr class="tableSubHeader" id="herbs">
-                    <th colspan="12">Herbs</th>
-                </tr>
-                <tr class="tableSubHeader" id="spices">
-                    <th colspan="12">Spices</th>
-                    <tr class="tableEntry">
-                        <td class="tableDataID">2</td>
-                        <td class="tableDataVulgar">Piperine</td>
-                        <td class="tableDataCAS">94-62-2</td>
-                        <td class="tableDataReferencePlant">Pepper plant (woody vine)</td>
-                        <td class="tableDataPlantLocation">S/SE Asia</td>
-                        <td class="tableDataChemicalType">Alkaloid</td>
-                        <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/piperine.png" alt="piperine"></td>
-                        <td class="tableDataCulinary">Ancient spice praised for its heat, historically expensive and a central product in the spice trade from Asia and Europe. Black and white pepper are from the same plant, but black pepper is ground after boiling, drying and grinding the entire unripe 'drupe' (flesh and seed), while white pepper is the ground seed after extraction from the mature drupe.</td>
-                        <td class="tableDataMedicinal">Beyond traditional medicine, piperine appears to have no direct applications (though it is a key chemical building block and has various avenues of medical research).</td>
-                        <td class="tableDataADME">Piperine appears to have complex ADME, though its high hydrophobicity appears to allow for passove absorpion. Studies have shown it inhibits MAO-A and B (potential neurological effects) and P450 enzymes 3A and 2D6.</td>
-                        <td class="tableDataOtherNotes">The nitrogenous ring on its own is called piperidine. The carboxylic acid separated from piperidine is called piperic acid. Piperidine is a regulated chemical as it can be used as a building block for many pharmaceuticals and illicit drugs (e.g. "Angel Dust").</td>
-                        <td class="tableDataReferences">
-                            Medicinal review, 2022: <a href="#ref2-1">Ref2-1</a><br>
-                            ADME review of oral PK, 2021: <a href="#ref2-2">Ref2-2</a><br>
-                            MAO-A/B inhibition (reverisble), 2005: <a href="#ref2-3">Ref2-3</a><br>
-                            P450 inhibition (mechanism-based), 2020: <a href="#ref2-4">Ref2-4</a>
-                        </td>
+        <div id="phytochemicalTableDiv">
+            <table id="phytochemicalTable">
+                <thead>
+                    <tr id="tableMainHeader">
+                        <th id="EntryID">EntryID</th>
+                        <th id="VulgarName">Vulgar Name</th>
+                        <th id="CAS">CAS</th>
+                        <th id="ReferencePlant">Reference Plant</th>
+                        <th id="PlantLocation">Plant Location</th>
+                        <th id="ChemicalType">Chemical Type</th>
+                        <th id="Structure">Structure</th>
+                        <th id="CulinaryNotes">Culinary Notes</th>
+                        <th id="MedicinalNotes">Medicinal Notes</th>
+                        <th id="ADME">ADME Notes</th>
+                        <th id="OtherNotes">Other Notes</th>
+                        <th id="References">References</th>
                     </tr>
-                </tr>
-                <tr class="tableEntry">
-                    <td class="tableDataID">EMPTY</td>
-                    <td class="tableDataVulgar">EMPTY</td>
-                    <td class="tableDataCAS">EMPTY</td>
-                    <td class="tableDataReferencePlant">EMPTY</td>
-                    <td class="tableDataPlantLocation">EMPTY</td>
-                    <td class="tableDataChemicalType">EMPTY</td>
-                    <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
-                    <td class="tableDataCulinary">EMPTY</td>
-                    <td class="tableDataMedicinal">EMPTY</td>
-                    <td class="tableDataADME">EMPTY</td>
-                    <td class="tableDataOtherNotes">EMPTY</td>
-                    <td class="tableDataReferences"><a href="#ref1-1">EMPTY</a></td>
-                </tr>
-            </tbody>
-            <tfoot>
-            </tfoot>
-        </table>
+                </thead>
+                <tbody>
+                    <tr class="tableSubHeader" id="fruits">
+                        <th colspan="12">Fruits</th>
+                    </tr>
+                    <tr class="tableEntry">
+                        <td class="tableDataID">1</td>
+                        <td class="tableDataVulgar">Bergamottin</td>
+                        <td class="tableDataCAS">7380-40-7</td>
+                        <td class="tableDataReferencePlant">Bergamot Orange (tree)</td>
+                        <td class="tableDataPlantLocation">Mediterranean</td>
+                        <td class="tableDataChemicalType">Furanocoumarin</td>
+                        <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
+                        <td class="tableDataCulinary">Essential oils containing bergamottin are used to flavour Earl Grey tea</td>
+                        <td class="tableDataMedicinal">Potentially phototoxic. The same family of chemicals in grapefruits (and other citrus to an extent) that inhibit CYP3A4 (see below).</td>
+                        <td class="tableDataADME">Inhibitor of P450 enzymes. Similar fruits like grapefruits recommended to avoid during use of drugs dependent on P450 metabolism.</td>
+                        <td class="tableDataOtherNotes">Used as a fragrance.</td>
+                        <td class="tableDataReferences"><a href="#ref1-1">Ref1-1</a></td>
+                    </tr>
+                    <tr class="tableSubHeader" id="vegetables">
+                        <th colspan="12">Vegetables</th>
+                    </tr>
+                    <tr class="tableSubHeader" id="nuts">
+                        <th colspan="12">Nuts</th>
+                    </tr>
+                    <tr class="tableSubHeader" id="herbs">
+                        <th colspan="12">Herbs</th>
+                    </tr>
+                    <tr class="tableSubHeader" id="spices">
+                        <th colspan="12">Spices</th>
+                        <tr class="tableEntry">
+                            <td class="tableDataID">2</td>
+                            <td class="tableDataVulgar">Piperine</td>
+                            <td class="tableDataCAS">94-62-2</td>
+                            <td class="tableDataReferencePlant">Pepper plant (woody vine)</td>
+                            <td class="tableDataPlantLocation">S/SE Asia</td>
+                            <td class="tableDataChemicalType">Alkaloid</td>
+                            <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/piperine.png" alt="piperine"></td>
+                            <td class="tableDataCulinary">Ancient spice praised for its heat, historically expensive and a central product in the spice trade from Asia and Europe. Black and white pepper are from the same plant, but black pepper is ground after boiling, drying and grinding the entire unripe 'drupe' (flesh and seed), while white pepper is the ground seed after extraction from the mature drupe.</td>
+                            <td class="tableDataMedicinal">Beyond traditional medicine, piperine appears to have no direct applications (though it is a key chemical building block and has various avenues of medical research).</td>
+                            <td class="tableDataADME">Piperine appears to have complex ADME, though its high hydrophobicity appears to allow for passove absorpion. Studies have shown it inhibits MAO-A and B (potential neurological effects) and P450 enzymes 3A and 2D6.</td>
+                            <td class="tableDataOtherNotes">The nitrogenous ring on its own is called piperidine. The carboxylic acid separated from piperidine is called piperic acid. Piperidine is a regulated chemical as it can be used as a building block for many pharmaceuticals and illicit drugs (e.g. "Angel Dust").</td>
+                            <td class="tableDataReferences">
+                                Medicinal review, 2022: <a href="#ref2-1">Ref2-1</a><br>
+                                ADME review of oral PK, 2021: <a href="#ref2-2">Ref2-2</a><br>
+                                MAO-A/B inhibition (reverisble), 2005: <a href="#ref2-3">Ref2-3</a><br>
+                                P450 inhibition (mechanism-based), 2020: <a href="#ref2-4">Ref2-4</a>
+                            </td>
+                        </tr>
+                    </tr>
+                    <tr class="tableEntry">
+                        <td class="tableDataID">EMPTY</td>
+                        <td class="tableDataVulgar">EMPTY</td>
+                        <td class="tableDataCAS">EMPTY</td>
+                        <td class="tableDataReferencePlant">EMPTY</td>
+                        <td class="tableDataPlantLocation">EMPTY</td>
+                        <td class="tableDataChemicalType">EMPTY</td>
+                        <td class="tableDataStructure"><img class="structureThumbnail" src="phytochemicalsData/bergamottin.png" alt="bergamottin"></td>
+                        <td class="tableDataCulinary">EMPTY</td>
+                        <td class="tableDataMedicinal">EMPTY</td>
+                        <td class="tableDataADME">EMPTY</td>
+                        <td class="tableDataOtherNotes">EMPTY</td>
+                        <td class="tableDataReferences"><a href="#ref1-1">EMPTY</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
         <h3 class="flexTextCentered">General Notes</h3>
         <p class="flexTextLeft" id="generalNotes">
             Alkaloids - general term for compounds with at least a nitrogen, often basic. Not a particularly robust classification by chemistry or biochemistry.
