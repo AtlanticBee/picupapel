@@ -6,16 +6,16 @@
 }
 
 #phytochemicalTableDiv{
+    display: block;
     overflow-x: auto;
     overflow-y:auto;
-    width: 90vw;
+    width: 90%;
     max-height: 75vh;
 }
 
 td, th, tr{
     padding: 4px;
-    max-width: 200px;
-    min-width: 80px;
+    min-width: 100px;
 }
 
 tr{
