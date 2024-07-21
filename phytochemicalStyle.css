@@ -6,7 +6,7 @@
 }
 
 #phytochemicalTableDiv{
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y:auto;
     width: 90vw;
     max-height: 75vh;
@@ -15,6 +15,7 @@
 td, th, tr{
     padding: 4px;
     max-width: 200px;
+    min-width: 80px;
 }
 
 tr{
