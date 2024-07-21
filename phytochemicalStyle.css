@@ -5,8 +5,19 @@
     text-align: center;
 }
 
+#phytochemicalTableDiv{
+    overflow-x: auto;
+    overflow-y:auto;
+    width: 90vw;
+    max-height: 75vh;
+}
+
 td, th, tr{
     padding: 4px;
+}
+
+tr{
+    max-height: 250px;
 }
 
 td{
@@ -15,6 +26,8 @@ td{
 
 #tableMainHeader{
     background-color: #cedafa;
+    position: sticky;
+    top: 0px;
 }
 
 .tableSubHeader{
