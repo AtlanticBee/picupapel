@@ -64,3 +64,7 @@ td{
     height: auto;
     width: auto;
 }
+
+#showTableOptions{
+    font-size: larger;
+}

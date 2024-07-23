@@ -14,6 +14,33 @@
         <h3 class="flexTextCentered">Phytochemical Database</h3>
         <p class="flexTextCentered" style="font-style: italic;">This table is not an exhaustive list, nor for any medicinal/nutritional guidance.<br>The aim is to compile a list of some of the non-nutrient chemicals in our diet from plants (i.e. not the usual carbs, proteins, lipids etc.).<br>It is these chemicals that often impart flavour, colour and other interesting properties.</p>
         <p>For some general notes on the topics see the <a href="#generalNotes">general notes</a> at the bottom of the page.</p>
+        <div id="tableOptionsDiv">
+            <button id="showTableOptions">&#x2795 Show Table Options</button>
+            <div class="tableOptionsCheckboxDiv">
+                <input type="checkbox" id="structureVisibility" name="structureVisibility">
+                <label for="culinaryNotesVisibility">Chemical Structures (Warning for slow/metered connections: these images will consume more data.)</label>
+            </div>
+            <div class="tableOptionsCheckboxDiv">
+                <input class="tableOptionsCheckbox" type="checkbox" id="culinaryNotesVisibility" name="culinaryNotesVisibility">
+                <label for="culinaryNotesVisibility">Culinary Notes</label>
+            </div>
+            <div class="tableOptionsCheckboxDiv">
+                <input class="tableOptionsCheckbox" type="checkbox" id="medicinalNotesVisibility" name="medicinalNotesVisibility">
+                <label for="medicinalNotesVisibility">Medicinal Notes</label>
+            </div>
+            <div class="tableOptionsCheckboxDiv">
+                <input class="tableOptionsCheckbox" type="checkbox" id="ADMEnotesVisibility" name="ADMEnotesVisibility">
+                <label for="ADMEnotesVisibility">ADME Notes</label>
+            </div>
+            <div class="tableOptionsCheckboxDiv">
+                <input class="tableOptionsCheckbox" type="checkbox" id="otherNotesVisibility" name="otherNotesVisibility">
+                <label for="otherNotesVisibility">Other Notes</label>
+            </div>
+            <div class="tableOptionsCheckboxDiv">
+                <input class="tableOptionsCheckbox" type="checkbox" id="referencesVisibility" name="referencesVisibility">
+                <label for="referencesVisibility">References</label>
+            </div>
+        </div>
         <div id="phytochemicalTableDiv">
             <table id="phytochemicalTable">
                 <thead>
