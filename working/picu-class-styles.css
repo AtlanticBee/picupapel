@@ -1,0 +1,12 @@
+.toc-item {
+  display: flex;
+  align-items: baseline; /* Keeps text and line aligned perfectly on their bottom edges */
+  margin-bottom: 1rem;
+}
+
+.toc-line {
+  flex-grow: 1;
+  height: 2px;
+  object-fit: fill;
+  align-self: baseline;
+}

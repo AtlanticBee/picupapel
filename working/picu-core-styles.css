@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: ui-monospace;
+}
+
+html{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* For table of contents */
+dl {
+  max-width: 40rem;
+}
+/* Stands for definition term */
+dt {
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+/* Stands for definition description */
+dd {
+  white-space: nowrap;
+  margin-left: 1rem;
+}
