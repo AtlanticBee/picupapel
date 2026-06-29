@@ -8,5 +8,11 @@
   flex-grow: 1;
   height: 2px;
   object-fit: fill;
-  align-self: baseline;
+}
+
+/* For SVGs to invert in light vs dark */
+@media (prefers-color-scheme: dark) {
+  .toc-line {
+    filter: invert(1);
+  }
 }

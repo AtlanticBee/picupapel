@@ -1,24 +1,60 @@
+:root {
+  color-scheme: light dark;
+  --bg-color: light-dark(white, rgb(72, 72, 72));
+  --text-color: light-dark(black, rgb(239, 239, 239));
+  --accent: light-dark(rgb(196, 202, 233), rgb(88, 133, 239));
+}
+
 *{
     box-sizing: border-box;
     font-family: ui-monospace;
+    margin: 0;
+    padding: 0;
 }
 
 html{
   font-size: 14px;
-  margin: 0;
-  padding: 0;
 }
 
 body{
-  max-width: 60rem;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
+  /* Notice we use CSS variables for light and dark mode pre-determined by the browser/OS preferences. */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main{
+    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+ul, ol{
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+footer p {
+  text-align: center;
+}
+
+header p {
+  text-align: center;
 }
 
 /* For table of contents */
-dl {
-  max-width: 40rem;
-}
+
 /* Stands for definition term */
 dt {
   font-weight: bold;
@@ -27,6 +63,7 @@ dt {
 }
 /* Stands for definition description */
 dd {
-  white-space: nowrap;
   margin-left: 1rem;
+  /* Failsafe. If a word is too long for the screen width instead of creating a scrollbar it will break. */
+  overflow-wrap: break-word;
 }
