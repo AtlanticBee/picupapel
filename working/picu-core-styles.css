@@ -45,6 +45,11 @@ h1{
   font-weight: 400;
 }
 
+h3{
+  text-decoration: underline;
+  font-weight: 400;
+}
+
 footer p {
   text-align: center;
 }
