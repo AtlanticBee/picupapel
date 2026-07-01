@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../picu-core-styles.css" rel="stylesheet" />
+        <link href="../picu-class-styles.css" rel="stylesheet"/>
+        <title>Picu Papel Home</title>
+    </head>
+    <body>
+        <header>
+            <p><a href="../index.html" aria-label="Homepage">Picu Papel</a> -> <a href="../blog.html" aria-label="Blog Home">Blog</a> -> Data Rants -> Bad Acronyms</p>
+        </header>
+        <main>
+            <h2>ONS Rural-Urban Classification Scheme</h2>
+            <h3>Introduction</h3>
+            <p>This piece describes the method for classifying areas of England and Wales by how rural or urban they are and then I describe some personal grievances with the PDF.</p>
+            <p>Reference: Rural-Urban Classification - Methodology - 2021 - PDF - <a href="https://geoportal.statistics.gov.uk/documents/833a35f2a1ec49d98466b679ae0a0646/about">Download Link at ONS</a></p>
+            <h3>Overview of Publication</h3>
+            <p>The Office of National Statistics (ONS) publishes a host of documents such as their 2021-census-based system for the classification of how rural or urban an area is. They call this the <em>Rural Urban Classification</em> scheme or <em>RUC</em>.</p>
+            <p>As a newcomer to the field, I can see why implementing such a method would be a challenge. The nuances of what we consider urban are more complex than what we can reasonably deduce from a 2D map with some addresses for buildings.</p>
+            <p>Some examples questions might include:</p>
+            <ul>
+                <li>What do you consider a "major" settlement?</li>
+                <li>Does the density and type of housing matter? How many gaps between houses are needed to reduce an Urban score?</li>
+                <li>Does proximity to a major settlement matter? How do you distinguish between a truly rural hamlet of ten houses, and the same set of houses if they were located on the main road right by a major city?</li>
+                <li>Is an area more rural if it has no transport links to the nearest major population centre?</li>
+                <li>Does it matter what facilities a population can/can't access regardless of their distance to a major town/city?</li>
+                <li>Do geographical features like an impassable river or mountain chain have any effect?</li>
+                <li>Does an agglomeration of many small villages get treated the same as a single town of the same population?</li>
+            </ul>
+            <p>In the publication, they explain how they implement the RUC scheme and its improvements upon their existing 2011 Census analysis.</p>
+            <h3>Method Summary</h3>
+            <p>For their summary document, please see this link to the ONS:<a href="https://geoportal.statistics.gov.uk/documents/c8e8e6db38e04cb8937569d74bce277a/about"> RUC User Guide</a></p>
+            <p>Their basic method roughly as follows:</p>
+            <ul>
+                <li>Divide the country into 50m x 50m cells</li>
+                <li>Calculate the cell population <em>Density Profile</em> (effectively the density of addresses from the census)</li>
+                <li>Using a set mathematical rules based on concentric circles from the middle of the cell, classify the cell into one of three categories:</li>
+                <ul>
+                    <li>Urban</li>
+                    <li>Larger Rural</li>
+                    <li>Smaller Rural</li>
+                </ul>
+                <li>Now they scale up one level from these cells and classify the smallest unit of the census called an Output Area (OA), (see <a href="#output-areas">Footnote</a>). For each OA, they assign it one of the same three options based on which cell class is most common within the OA. Some manual adjustments are made for OAs that don't align well with any cells.</li>
+                <li>OAs are then re-classified as Urban if the Ordnance Survey data states the OA is within a population center of > 10,000 people and vice versa to Larger Rural, overriding the majority cell verdict</li>
+                <li>Border areas around population centers, near the Scottish border and coastal towns are given special treatment</li>
+                <li>For each of the three categories, if the driving distance to a Major Settlement (defined as >75,000 people) is within 30 minutes, then the category is sub-classified as "Near" Major Urban Settlement or "Further" if not within 30 minutes</li>
+                <li>This therefore leaves us with 6 classifications</li>
+            </ul>
+            <h3>Notes</h3>
+            <p>The use of 50m cells is an improvement in resolution over the 2011 analysis.</p>
+            <p>They note that an analysis of urbanisation at lower resolution (larger areas than OAs), such as by Local Authority Districts (LADs, see <a href="#local-authority-districts">footnote</a>) could be misleading as large urban settlements will dominate.</p>
+            <h3>Criticisms</h3>
+            <h4>1. Choosing road transport for proximity to major settlements</h4>
+            <p>Roads may be the primary transport links between settlements, but could this be misleading or biased?</p>
+            <p>They do mention that the RUC system necessarily cannot take into account such nuances - it is a general system but...</p>
+            <p>A rail link through a village might well raise its status and connect it faster to a major city than any road.</p>
+            <p>Secondly, the assumption is that the person at an address can reasonably be expected to drive or catch a bus. We know bus routes, particularly in more rural areas are typically slow, infrequent and stopping services so anyone disabled, too young, too old or too poor to own their own vehicle is immediately ignored i.e. the distinction between near and far from a major settlement is presented from the point of view of a wealthier, able adult. In fairness as a counter-argument, 89% of kilometers travelled were by road in 2025 (<a href="https://www.gov.uk/government/statistics/transport-statistics-great-britain-2025/transport-statistics-great-britain-2024-domestic-travel">Government Transport Statistics 2025</a>). As a counter-counter argument (so just an argument?), transport into major settlements is more likely to be by public transport anyway due to the congestion of cities, parking charges, eco-taxes, park-and-ride options and simply the fact that most public transport networks point to/from population hubs. Also this raises another point - does the transport have to be to a central point within the city or the city's boundaries? It uses a Population Weighted Centroid (PWC) which essentials defines the middle of a major settlement by where the population lies (rather than simple geometry or a symbolic town center) but does access to this centroid matter more than (say) the retail parks on its periphery. What if the center of the city has virtually no living population (e.g. it's just businesses)? Finally is the PWC appropriate when we're more interested in access to city services, not housing?</p>
+            <h4>2. Terminology</h4>
+            <p>There are a lot of acronyms in this PDF, but I don't feel they're always well used/defined - particularly for a document that is for public reading.</p>
+            <p>Page 2 mentions OAs (Output Areas) with no definition. The term in my view is itself deliberately vague (perhaps something better might be "smallest census unit or area"), and given the complexity in how OAs are apparently calculated, I believe a small explanation is required in this document at any rate.</p>
+            <p>There are simply too many acronyms in the document (BUAs, ABUAs, RUCs, OAs, PWCs, LSOA, MSOA, LADs). Other long terms like "Intermediate Rural: Majority further from major town or city" (one of the six classifications) never receives a proper acronym despite being one of the six core classifications in the document.</p>
+            <p>The acronyms would ideally be defined in an index at the start or end of the document.</p>
+            <p>Just to rub the acronyms in a bit, one section is titled "OA allocation to ABUAs".</p>
+            <p>The use of the classifications in datasets is very hard to understand. If you look at the image below, taken from <a href="https://geoportal.statistics.gov.uk/datasets/ce3f8fa9ba214943961ea49148c15329/explore">this source</a> and displayed on a regular screen, the classifications are hard to read due to their length. Here, an acronyn might have been better. Naturally you could download the CSV instead or hover over each cell with your mouse, but I think if the classifications are effectively a scale of highly urban to highly rural, then a number value from 1 to 6 would be more succinct.</p>
+            <img src="../resources/screenshot_ONS_dataset.png" alt="Screenshot of ONS Dataset for 2021 Census Web Browser" width="600px">
+            <h3>Summary</h3>
+            <p>While the summary document is much neater, the primary PDF discussed here is just a bit too "Mr Geography" giving slightly too little background on the Census Areas (e.g. OAs), too many acronyms and some poor data displays.</p>
+            <p>The reliance on private road transport may also affect the classification of local authorities (for example), and if central government funds and grants to local authorities were based in part on their access to major settlements by private transport alone, then this decision could have unintended consequences.</p>
+            <h3>Footnotes</h3>
+            <p id="output-areas">Output Areas (OAs) - ths lowest grographical division in the census data defined as a group of addresses within a postcode determined by an algorithm to try and keep within <q>40 and 250 households and... a resident population between 100 and 625 persons</q> to maintain anonymity. They were first set up in 2001 and have been adjusted in the 2011 and 2021 censuses. See the albeit vague definitions at the <a href="https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies">ONS website link</a>.</p>
+            <p id="local-authority-districts"><em>LADs</em> - Local Authority Districts occur in two forms in England and Wales. The simpler type is the Unitary District where a single elected local council is responsible for the provision of all local government. The second type is the two-tier district where you have a smaller District Councils operating within a County Council. Each of the two tiers provides a complementary set of services to the other. Apparently, there is a push to phase out two-tier organisations in favour of unitary districts for simplicity.</p>
+        </main>
+        <footer>
+            <p>Written: 30th June 2024</p>
+        </footer>
+    </body>
+</html>
