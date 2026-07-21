@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../picu-core-styles.css" rel="stylesheet" />
+        <link href="../picu-class-styles.css" rel="stylesheet"/>
+        <title>Picu Papel Home</title>
+    </head>
+    <body>
+        <header>
+            <p><a href="../index.html" aria-label="Homepage">Picu Papel</a> -> <a href="../blog.html" aria-label="Blog Home">Blog</a> -> Data Rants -> Bad Acronyms</p>
+        </header>
+        <main>
+            <h2>ONS Rural-Urban Classification Scheme</h2>
+            <h3>Introduction</h3>
+            <p>The Office of National Statistics (ONS) publish a host of resources alongside the data for the census that occurs every ten years. Two of these documents describe their system for classifying areas by their level of urbanisation:</p>
+            <ul>
+                <li><a href="https://geoportal.statistics.gov.uk/documents/833a35f2a1ec49d98466b679ae0a0646/about">Rural-Urban classification (methodology) 2021</a></li>
+                <li><a href="https://geoportal.statistics.gov.uk/documents/c8e8e6db38e04cb8937569d74bce277a/about">Rural-Urban classification (user guide) 2021</a></li>
+            </ul>
+            <p>The user guide is the best introduction to the topic, while the methodology is more dense.</p>
+            <h3>Why the documents were of interest</h3>
+            <p>Classifying somewhere as urban or rural cannot be not an easy task (as they note in their own documents). For example, we might need to answer:</p>
+            <ul>
+                <li>What do you consider a "major" settlement?</li>
+                <li>Does the density and type of housing matter? What defines a settlement border?</li>
+                <li>Does proximity to a major settlement matter?</li>
+                <li>Is an area more rural if it has no transport links to a major settlement?</li>
+                <li>Does it matter what services a population can/can't access?</li>
+                <li>Do geographical features like a river or mountain chain matter?</li>
+                <li>Does an agglomeration of many small villages get treated as one?</li>
+            </ul>
+            <p>I also find the creation of these reports interesting because:</p>
+            <ul>
+                <li>The subject (urbanisation) is not rigidly defined mathematically - it a concept which is subjective and multifaceted</li>
+                <li>Imperfect data here might lead to imperfect decision-making in government</li>
+            </ul>
+            <h3>Summary of the ONS Urbanisation classification system</h3>
+            <p>I won’t explain what is already written clearly in the summary document, but the basic process for classifying an area by its urbanisation is as follows:</p>
+            <ul>
+                <li>The country is divided into 50m x 50m cells</li>
+                <li>A density profile of addresses is calculated for each cell (based off census data)</li>
+                <li>Geometric rules classify each cell into three groups:</li>
+                <ul>
+                    <li>Urban</li>
+                    <li>Larger rural</li>
+                    <li>Smaller rural</li>
+                </ul>
+                <li>For each Output Area (OA, see <a href="#output-areas">footnote</a>) we assign the same classification based on the majority of the underlying cells except that there are maual adjustments for coastal areas, border areas, and those within certain population centres according to the Ordnance Survey maps</li>
+                <li>The OAs are then further split into six categories (two per initial grouping) depending on whether they are more or less than 30 minutes car journey from a settlement of > 75,000 people</li>
+            </ul>
+            <p>Notes:</p>
+            <ul>
+                <li>The 2011 census used larger cells hence they claim an improved resolution in the 2021 census</li>
+                <li>Analysis of urbanisation at scales above the OA are noted as being prone to dominance by major settlements</li>
+            </ul>
+            <h3>Criticisms</h3>
+            <p>1. Measuring proximity by private car journeys</p>
+            <p>Using a private car journey as the measure of proximity to large settlements may be based on the fact that the UK is exceedingly car-centric (see <a href="#car-centricity">footnote</a>), but this may lead to discrimination. The elderly, the disabled, the sick and the young who cannot drive, and those who cannot afford to own a car, may be classified as being in an urban area simple because those who are able and wealthy enough can drive.</p>
+            <p>A local or central government might therefore incorrectly assume they do not need funding for (e.g.) more public transport for access to shops and other amenities, yet for these people such amenities are beyond their reach. Local governments might also make decision such as skipping bus stops in urban areas thinking that since they're already urban, the incoming buses from rural areas don't need to stop there anyway. I am sure the funding for a host of services (healthcare, night time transport, medical services, retail planning permission, road repairs, policing…) might all be affected by how this ONS report is used higher up in government.</p>
+            <p>This decision also brings into question how future-proof our ONS publications are. Suppose we make good our promises as a nation to improve public transport, as well as bringing in city defences to traffic such as ULEZ zones and park-and-ride services. A town could become connected by a fast bus, train or light railway to a major settlement, yet the map would still classify it (and government would treat it as) rural with whatever benefits and drawbacks come with it. For example, hundreds of towns might be seen as rural, despite being heavy commuter belt with little more than a few golf courses to separate them from their major city, if their primary link is rail.</p>
+            <p>So in effect, we could have a massive new public transport revival, and this mapping system would be completely agnostic to the change. It would also not be very backwards-compatible for trend analysis over many census reports (probably no more than about fifty years in the past too, before which cars were also less commonplace - see this <a href="https://www.bbc.co.uk/news/uk-42182497">link</a>).</p>
+            <p>2. Measuring the centre of a major settlement by population</p>
+            <p>While they now use population-weighted centroids (PWCs) to calculate the true centre of a town by population, is population what we should be measuring when access to a major settlement for most people is not to visit other friends and family, but primarily one about access to jobs, retail, entertainment and public services? Presumably, the PWC only looks at housing addresses… and industry and retail outlets may actually be the primary destinations for a large number of people?</p>
+            <p>3. Terminology</p>
+            <p>I realise this is part of a technical series of documents, but it concerns me that for the general public who are intended to benefit from this publication, to journalists holding government accountable and to Members of Parliament and civil servants (not all of whom are statistics experts), that they may not be able to always cross-check what such a publication “seems” to suggest to make informed decisions. In the wrong hands, a technical document can be used as an excuse to implement incorrect decisions as a purely mathematical mistake therefore eliminating accountability.</p>
+            <p>In the methodology document (which I would have considered the most in-depth and complete) they seem to have missed out definitions for important abbreviations (e.g. OAs). The name Output Area seems unreasonably vague too. Other terms are so long that they no longer fit on a scrollable spreadsheet (e.g. “Intermediate Rural: Majority further from major town or city”, see image below).</p>
+            <img src="../resources/screenshot_ONS_dataset.png" alt="Screenshot of ONS Dataset for 2021 Census Web Browser" width="600px">
+            <p>Couldn't we have had a classification system from 1 (urban) to 6 (rural) with no loss of information? Or if using numbers could be dangerous, letters from A to F? These would still be immediately intelligible with a small key attached, easier to filter in a spreadsheet and read whether printed or on screen.</p>
+            <p>There is no actual list of definitions in the main methodology document, yet considering the number of abbreviations used, a small glossary would have been perfect (BUAs, ABUAs, RUCs, OAs, PWCs, LSOA, MSOA and LADs).</p>
+            <h3>Footnotes</h3>
+            <p id="output-areas">Output Areas (OAs) - ths lowest grographical division in the census data defined as a group of addresses within a postcode determined by an algorithm to try and keep within <q>40 and 250 households and... a resident population between 100 and 625 persons</q> to maintain anonymity. They were first set up in 2001 and have been adjusted in the 2011 and 2021 censuses. See the albeit vague definitions at the <a href="https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeographies/census2021geographies">ONS website link</a>.</p>
+            <p id="car-centricity">89% of kilometers travelled were by road in 2025. (<a href="https://www.gov.uk/government/statistics/transport-statistics-great-britain-2025/transport-statistics-great-britain-2024-domestic-travel">Government Transport Statistics 2025</a>)</p>
+            <p>LADs - Local Authority Districts occur in two forms in England and Wales. The simpler type is the Unitary District where a single elected local council is responsible for the provision of all local government. The second type is the two-tier district where you have a smaller District Councils operating within a County Council. Each of the two tiers provides a complementary set of services to the other. Apparently, there is a push to phase out two-tier organisations in favour of unitary districts for simplicity.</p>
+        </main>
+        <footer>
+            <p>Picu Papel</p>
+        </footer>
+    </body>
+</html>

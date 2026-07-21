@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<head>
+    <title>Picu Papel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="picupapelStyle.css">
+    <link rel="stylesheet" href="randomNumberGeneratorStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="title">Picu Papel</div>
+    <div class="subtitle">Apps</div>
+    <div class="infratitle">Random Number Generator - 16th July 2024</div>
+    <div class="mainText">
+        <h3 class="flexTextCentered">Welcome to the Random Number Generator</h3>
+        <p class="flexTextCentered" style="font-style: italic;">Studying API requests</p>
+        <p class="flexTextCentered">This number generator collects data from free APIs as listed below. When you click "GO", the API requests are submitted and the results are used to generate a random number.</p>
+        <p class="flexTextCentered">The idea of using pseudo-random processes is one PCs use to generate random numbers too.</p>
+        <h3 class="flexTextCentered">API calls</h3>
+        <table>
+            <tr>
+                <th id="apiName">API Name</th>
+                <th id="apiDoc">API Documentation</th>
+                <th id="requestDetails">Request Details</th>
+                <th id="acknowledgements">Acknowledgements</th>
+                <th id="result">Result of Request</th>
+            </tr>
+            <tr>
+                <td>Rainfall and temperature values for Blackpool, UK from 2 days prior to now</td>
+                <td><a href="//open-meteo.com">open-meteo.com</a></td>
+                <td><a href="https://api.open-meteo.com/v1/forecast?latitude=53.8167&longitude=-3.05&hourly=temperature_2m,rain&past_days=2&forecast_days=1">Link</a></td>
+                <td>Zippenfenig, P. (2023) Open-Meteo.com Weather API. Zenodo. doi: 10.5281/ZENODO.7970649.</td>
+                <td id="blackpool"></td>
+            </tr>
+            <tr>
+                <td>Windspeed and Temerature for Balkhash, Kazakhstan from 2 days prior to now</td>
+                <td><a href="//open-meteo.com">open-meteo.com</a></td>
+                <td><a href="https://api.open-meteo.com/v1/forecast?latitude=46.8481&longitude=74.995&hourly=temperature_2m,wind_speed_10m&past_days=2&forecast_days=1">Link</a></td>
+                <td>Zippenfenig, P. (2023) Open-Meteo.com Weather API. Zenodo. doi: 10.5281/ZENODO.7970649.</td>
+                <td id="balkhash"></td>
+            </tr>
+        </table>
+        <input type="button" id="goButton" name="goButton" value="GO" style="font-size: larger; background-color: rgb(141, 211, 141);">
+        <div>
+            <h3 class="flexTextCentered">Results:</h3>
+            <p class="flexTextCentered" id="output"></p>
+        </div>
+    </div>
+    <svg id="dropDownButton" version="1.1" width="49px" height="49px">
+        <rect id="dropDownButtonLine1" x="7" y="7" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine2" x="7" y="21" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+        <rect id="dropDownButtonLine3" x="7" y="35" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
+    </svg>
+    <div id="dropDownMenu">
+        <div class="dropDownLink"><a href="index.html">Home</a></div>
+        <div class="dropDownLink"><a href="about.html">About</a></div>
+        <div class="dropDownLink"><a href="help.html">Help</a></div>
+        <div class="dropDownLink"><a href="contact.html">Contact</a></div>
+        <div class="dropDownLink"><a href="blog.html">Blog</a></div>
+        <div class="dropDownLink"><a href="apps.html">Apps</a></div>
+    </div>
+    <script src="picupapelScript.js"></script>
+    <script src="ranNumGenScript.js"></script>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../../picu-core-styles.css" rel="stylesheet" />
+        <link href="../../picu-class-styles.css" rel="stylesheet"/>
+        <link href="random-number-generator-style.css" rel="stylesheet"/>
+        <title>Random Number Generator</title>
+    </head>
+    <body>
+        <header>
+            <p><a href="../index.html" aria-label="Homepage">Picu Papel</a> -> <a href="../../apps.html" aria-label="Blog Home">Apps</a> -> Random Number Generator</p>
+        </header>
+        <main>
+            <h2>Random Number Generator</h2>
+            <h3>Overview</h3>
+            <p>This JavaScript app sends requests for the following data in order to generate a random number:</p>
+            <ul>
+                <li><a href="https://api.open-meteo.com/v1/forecast?latitude=53.8167&longitude=-3.05&hourly=temperature_2m,rain&past_days=2&forecast_days=1">Rainfall and temperature values for Blackpool, UK</a></li>
+                <li><a href="https://api.open-meteo.com/v1/forecast?latitude=46.8481&longitude=74.995&hourly=temperature_2m,wind_speed_10m&past_days=2&forecast_days=1">Windspeed and Temerature for Balkhash, Kazakhstan</a></li>
+            </ul>
+            <p>Both requests are for data from the last 2 days.</p>
+            <p>See <a href="https://open-meteo.com">open-meteo.com</a> for more information on the API. Reference for this data source: <cite>Zippenfenig, P. (2023) Open-Meteo.com Weather API. Zenodo. doi: 10.5281/ZENODO.7970649.</cite></p>
+            <p>These two locations should be far enough apart that their weather over the short term are unrelated.</p>
+            <p>Lots of other API calls to other online resources could be used too: stock markets, the number of days since Github last went down (haha), the time taken for a request...</p>
+            <h3>Have a go!</h3>
+            <div class="random-number-generator-button-container">
+                <input type="button" id="goButton" name="goButton" value="GO">
+            </div>
+            <h3>Results</h3>
+            <p id="blackpoolTemp">Blackpool average temperature (C):</p>
+            <p id="blackpoolRain">Blackpool average rainfall (mm):</p>
+            <p id="balkhashWindspeed">Balkhash average windspeed (km/h):</p>
+            <p id="balkhashTemperature">Blakhash average temperature (C):</p>
+            <p id="output">Random Number Result:</p>
+        </main>
+        <footer>
+            <p>Picu Papel</p>
+        </footer>
+        <script src="random-number-generator-script.js"></script>
+    </body>
+</html>
