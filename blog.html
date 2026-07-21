@@ -1,36 +1,72 @@
 <!DOCTYPE html>
-<head>
-    <title>Picu Papel</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="picupapelStyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-    <div class="title">Picu Papel</div>
-    <div class="subtitle">Blog</div>
-    <div class="infratitle">Index - Updated 30th June 2024</div>
-    <div class="mainText">
-        <h3 class="flexTextCentered">History</h3>
-        <p class="flexTextCentered"><a href="burgages.html">Burgages</a> - Medieval plots of land found in European towns</p>
-        <h3 class="flexTextCentered">Poetry</h3>
-        <p class="flexTextCentered"><a href="microshrew.html">MicroShrew</a> - A study in chicken katsu curry</p>
-        <h3 class="flexTextCentered">Science</h3>
-        <p class="flexTextCentered"><a href="phytochemicals.html">Phytochemical Database</a> - Building a database of the chemicals we eat from plants</p>
-        <h3 class="flexTextCentered">Thoughtlements</h3>
-        <p class="flexTextCentered"><a href="theHumanScale.html">The Human Scale</a> - Some thoughts on the scale humans work best (?) at</p>
-    </div>
-    <svg id="dropDownButton" version="1.1" width="49px" height="49px">
-        <rect id="dropDownButtonLine1" x="7" y="7" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-        <rect id="dropDownButtonLine2" x="7" y="21" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-        <rect id="dropDownButtonLine3" x="7" y="35" width="35px" height="7px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-    </svg>
-    <div id="dropDownMenu">
-        <div class="dropDownLink"><a href="index.html">Home</a></div>
-        <div class="dropDownLink"><a href="about.html">About</a></div>
-        <div class="dropDownLink"><a href="help.html">Help</a></div>
-        <div class="dropDownLink"><a href="contact.html">Contact</a></div>
-        <div class="dropDownLink"><a href="blog.html">Blog</a></div>
-        <div class="dropDownLink"><a href="apps.html">Apps</a></div>
-    </div>
-    <script src="picupapelScript.js"></script>
-</body>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="picu-core-styles.css" rel="stylesheet" />
+        <link href="picu-class-styles.css" rel="stylesheet"/>
+        <title>Picu Papel Home</title>
+    </head>
+    <body>
+        <header>
+            <p><a href="index.html" aria-label="Homepage">Picu Papel</a> -> Blog
+        </header>
+        <main>
+            <h1>Blog Home</h1>
+            <p>Enjoy some hallucinatory nuggets.</p>
+            <section id="reviews">
+                <h3>Reviews</h3>
+                <nav aria-label="list of ideas">
+                    <div class="toc-item">
+                        <dt><a href="reviews/the-spy-who-came-in-from-the-cold.html">The spy who came in from the cold</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>Spy novel by John Le Carré</dd>
+                    </div>
+                </nav>
+            </section>
+            <section id="ideas">
+                <h3>Ideas</h3>
+                <nav aria-label="list of ideas">
+                    <div class="toc-item">
+                        <dt><a href="ideas/finding-aliens.html">Finding Aliens</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>Using unnatural shapes</dd>
+                    </div>
+                </nav>
+            </section>
+            <section id="data-rants">
+                <h3>Data Rants</h3>
+                <nav aria-label="list of data posts">
+                    <div class="toc-item">
+                        <dt><a href="data/rural-urban-classification.html">Rural-Urban Classification by the ONS</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>Pros and cons</dd>
+                    </div>
+                </nav>
+            </section>
+            <section id="history">
+                <h3>History</h3>
+                <nav aria-label="list of history posts">
+                    <div class="toc-item">
+                        <dt><a href="history/burgages.html">Burgages</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>Old term for a townhouse plot of land</dd>
+                    </div>
+                </nav>
+            </section>
+            <section id="poetry">
+                <h3>Poetry</h3>
+                <nav aria-label="list of poems">
+                    <div class="toc-item">
+                        <dt><a href="poetry/microshrew.html">Microshrew</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>An ode to Chorlton</dd>
+                    </div>
+                </nav>
+            </section>
+        </main>
+        <footer>
+            <p>Et voila</p>
+        </footer>
+    </body>
+</html>

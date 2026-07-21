@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<head>
-    <title>Picu Papel</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="stylesheet" href="picupapelStyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-    <div class="title">Picu Papel</div>
-    <div class="subtitle">Welcome</div>
-    <div class="infratitle">Latest main build: June 30th 2024</div>
-    <div class="mainText">
-        <div class="textWrapper">
-            <p class="flexTextCentered">Welcome to Picu Papel! The aims of this website are to practice coding and hopefully be a little entertaining to visitors.</p>
-            <p class="flexTextCentered"><a href="blog.html">Blog</a></p>
-            <p class="flexTextCentered"><a href="apps.html">Apps</a></p>
-            <p class="flexTextCentered"><a href="about.html">About</a></p>
-            <p class="flexTextCentered"><a href="contact.html">Contact</a></p>
-            <p class="flexTextCentered"><a href="help.html">Help</a></p>
-        </div>
-    </div>
-    <svg id="dropDownButton" version="1.1" width="69px" height="69px">
-        <rect id="dropDownButtonLine1" x="7" y="7" width="55px" height="11px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-        <rect id="dropDownButtonLine2" x="7" y="29" width="55px" height="11px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-        <rect id="dropDownButtonLine3" x="7" y="51" width="55px" height="11px" fill="rgb(100,100,100)" rx="3.5px"></rect>
-    </svg>
-    <div id="dropDownMenu">
-        <div class="dropDownLink"><a href="index.html">Home</a></div>
-        <div class="dropDownLink"><a href="about.html">About</a></div>
-        <div class="dropDownLink"><a href="help.html">Help</a></div>
-        <div class="dropDownLink"><a href="contact.html">Contact</a></div>
-        <div class="dropDownLink"><a href="blog.html">Blog</a></div>
-        <div class="dropDownLink"><a href="apps.html">Apps</a></div>
-    </div>
-    <script src="picupapelScript.js"></script>
-</body>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="picu-core-styles.css" rel="stylesheet" />
+        <link href="picu-class-styles.css" rel="stylesheet"/>
+        <title>Picu Papel Home</title>
+    </head>
+    <body>
+        <header>
+            <p>Picu Papel</p>
+        </header>
+        <main>
+            <h1>Homepage</h1>
+            <section id="about">
+                <h2>About</h2>
+                <p>Welcome to Picu Papel! This is a simple website to practice coding and have some fun.</p>
+                <p>The name of the website mean "Paper Moutain": Picu being the word for a mountain in a Spanish dialect, and Papel meaning paper.</p>
+            </section>
+            <nav aria-label="Table of Contents">
+                <h2>Table of Contents</h2>
+                <dl>
+                    <div class="toc-item">
+                        <dt><a href="#about">About</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>A short introduction to the website.</dd>
+                    </div>
+                    <div class="toc-item">
+                        <dt><a href="blog.html">Blog</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>My ramblings.</dd>
+                    </div>
+                    <div class="toc-item">
+                        <dt><a href="apps.html">Apps</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>Some web applications and code ideas.</dd>
+                    </div>
+                    <div class="toc-item">
+                        <dt><a href="#contact">Contact</a></dt>
+                        <img class="toc-line" src="toc-line.svg" alt="table of contents separator line">
+                        <dd>How to get in touch with me.</dd>
+                    </div>
+                </dl>
+            </nav>
+            <section id="about">
+                <h3>About</h3>
+                <p>I'm still undecided about whether I prefer a fountain pen or pencil, but the more I type on a computer the worse I seem to get at both tools...</p>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>If you reaaaaally want to contact me, send a message to the following email address (broken into a little riddle to ward of spam and bots):</p>
+                <address href="https://en.wikipedia.org/wiki/Banana">hostels + dash + bursts + 0 + o + @ + icloud.com</address>
+            </section>
+        </main>
+        <footer>
+            <p>Et voila</p>
+        </footer>
+    </body>
+</html>

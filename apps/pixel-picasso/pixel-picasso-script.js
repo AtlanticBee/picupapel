@@ -36,6 +36,7 @@ function clearEasel(){
         squareElement.style.fill = "#ffffff";
     }
     pixelColoursArray = Array(96).fill("#ffffff");
+    document.getElementById("downloadLink").style.visibility = "hidden";
 }
 
 function processUserInput(eventHandle, eventType){
